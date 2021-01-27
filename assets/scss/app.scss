@@ -1,0 +1,34 @@
+// -------------------------
+// Layout
+// -------------------------
+
+$section-margin-h--mobile: 80px;
+$section-margin-h: 148px;
+
+// --------
+// Outer Container
+// --------
+$outer-container-max-width: 1140px;
+$outer-container-margin: 20px;
+$outer-container-margin--desktop: 50px;
+
+
+$col-1:  8.33333333333%;
+$col-2:  16.6666666667%;
+$col-3: 		      25.0%;
+$col-4:  33.3333333333%;
+$col-5:  41.6666666667%;
+$col-6: 		      50.0%;
+$col-7:  58.3333333333%;
+$col-8:  66.6666666667%;
+$col-9: 		      75.0%;
+$col-10: 83.3333333333%;
+$col-11: 91.6666666667%;
+$col-12: 		       100%;
+
+$Futura-LT-Bold: 'Futura-LT-Bold';
+$Futura-LT-Book: 'Futura-LT-Book';
+$PlayfairDisplay-Italic: 'PlayfairDisplay-Italic';
+$PlayfairDisplay-Regular: 'PlayfairDisplay-Regular';
+@import 'main';
+// @import 'footer';
