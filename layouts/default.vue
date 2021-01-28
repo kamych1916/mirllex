@@ -2,15 +2,25 @@
   <div id="common">
     <header id="header" class="shown show sticky">
       <div class="outer-container">
-        <a href="/" class="parsed">M<i>.</i></a>
+        <nuxt-link to="/" class="parsed">M<i>.</i></nuxt-link>
         <ul class="primary-nav">
               
-            <li class="active"><a href="/en/" class="parsed">Projects</a></li>
+            <li :class="$nuxt.$route.name === 'index' ? 'active' : ''">
+              <nuxt-link to="/" class="parsed">Projects</nuxt-link>
+              <!-- <a href="/en/" class="parsed">Projects</a> -->
+            </li>
           
-            <li ><a href="#" class="parsed">About</a></li>
+            <li :class="$nuxt.$route.name === 'about' ? 'active' : ''">
+              <nuxt-link  to="/about" class="parsed">About</nuxt-link>
+              <!-- <a href="#" class="parsed">About</a> -->
+            </li>
             <!-- <li ><a href="/en/about/" class="parsed">About</a></li> -->
-          
-            <li ><a href="#" class="parsed">Contact</a></li>          
+
+            <li :class="$nuxt.$route.name === 'contact' ? 'active' : ''" >
+              <nuxt-link  to="/contact" class="parsed">Contact</nuxt-link>
+              <!-- <a href="/contact" class="parsed">Contact</a> -->
+            </li>    
+                  
             <!-- <li ><a href="/en/contact/" class="parsed">Contact</a></li>           -->
         </ul>
       </div>
@@ -26,10 +36,17 @@
 export default {
   data() {
     return {
+    //   is_active_main: false,
+    //   is_active_about: false,
+    //   is_active_contact: false,
     };
   },
   mounted(){
-    const HeaderTag = document.getElementById('header');;
+    // this.$nuxt.$route.name == 'contact' ? this.is_active_contact = true : ''
+    // console.log(this.is_active_contact)
+    // this.$nuxt.$route.name == 'about' ? this.is_active_about = true : ''
+    // this.$nuxt.$route.name == 'main' ? this.is_active_main = true : ''
+    const HeaderTag = document.getElementById('header');
     HeaderTag.style.borderBottom = "none";
     HeaderTag.style.backgroundColor = "transparent";
     window.addEventListener("scroll", ()=>{
@@ -40,8 +57,10 @@ export default {
         HeaderTag.style.borderBottom = "none"
         HeaderTag.style.backgroundColor = "transparent"
       }
-    })
-  }
+    });
+    // alert(this.$nuxt.$route.name)
+
+  },
 };
 </script>  
 <style>

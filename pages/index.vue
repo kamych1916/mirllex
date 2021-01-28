@@ -54,20 +54,20 @@
           </li>
 
           <li class="">
-            Branding <span>13</span>
+            Mobile Apps <span>1</span>
           </li>
 
           <li>
-            Content <span>24</span>
+            Web Systems <span>3</span>
           </li>
 
-          <li>
+          <!-- <li>
             Digital <span>53</span>
           </li>
 
           <li>
             Interior <span>4</span>
-          </li>
+          </li>  -->
 
         </ul>
       </div>
@@ -152,7 +152,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 html,
 body {
   background-color: #fff;
