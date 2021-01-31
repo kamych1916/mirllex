@@ -20,24 +20,24 @@
     </header>
 <section id="description">
 	<div id="featured">
-    <ZoomScroll v-on:stateChange="yourFunction($event)" >
-		<div class="img loaded" style="transform: scale(1);">
+    <!-- <ZoomScroll v-on:stateChange="yourFunction($event)" > -->
+		<div class="img loaded" id="img_parallax" style="transform: scale(1);">
 			<img :src='"@/assets/medias/images/zarinshop.jpg"' class="desc visible">
 		</div>
 		<div class="txt-title">
 			<h1 style="text-shadow: 1px 1px 6px black;">Zarin Shop</h1>
 			<p style="text-shadow: 1px 1px 8px black;" class="font-fat">Home Textile</p>
 		</div>
-		<div class="scroll-down-bar" >
+		<div class="scroll-down-bar" id="scrollbar" >
 			<div class="scroll-down">
 				<span >Scroll down</span>
 				<div class="arrow-bottom">
-					<span style="transform: rotate(35deg);"></span>
-					<span style="transform: rotate(-35deg);"></span>
+					<span style="transform: rotate(35deg);" id="arrow_up"></span>
+					<span style="transform: rotate(-35deg);" id="arrow_down"></span>
 				</div>
 			</div>
 		</div>
-    </ZoomScroll>
+    <!-- </ZoomScroll> -->
 	</div>
 
 	<div id="project-txt-intro" class="txt-content">
@@ -271,6 +271,20 @@ export default {
             zoomScrollDetails: {},
         }
     },
+    mounted(){
+        const ImgTag = document.getElementById('img_parallax');
+        const AwrrowTag = document.getElementById('scrollbar');
+        const Arrow_up = document.getElementById('arrow_up');
+        const Arrow_down = document.getElementById('arrow_down');
+        window.addEventListener("scroll", ()=>{
+            var scroll = document.documentElement.scrollTop;
+            ImgTag.style.transform = 'scale('+(100 + scroll/150)/100+')';
+            AwrrowTag.style.opacity = (100 - scroll/5)/100;
+            Arrow_up.style.transform = "rotate(" + ((100 - scroll/5)/2) + "deg)";
+            Arrow_down.style.transform = "rotate(-" + ((100 - scroll/5)/2) + "deg)";
+        })
+
+    },
     methods:{
             yourFunction(data) {
                 this.zoomScrollDetails = data;
@@ -280,5 +294,7 @@ export default {
 </script>
 
 <style>
-
+.zoom-scroll__content{
+    background-image: none !important;
+}
 </style>
