@@ -10,7 +10,7 @@
       </div>
 
       <div class="onePushed col-1-2">
-        <a href="#" class="parsed">
+        <nuxt-link to="/case/zarinshop" class="parsed">
         <!-- <a href="/en/zarinshop" class="parsed"> -->
           <div class="img loaded">
             <img
@@ -18,9 +18,9 @@
               class="visible"
             />
           </div>
-        </a>
+        </nuxt-link>
 
-        <a href="#" class="onePushed-button parsed" style="">
+        <nuxt-link to="/case/zarinshop" class="onePushed-button parsed" style="">
         <!-- <a href="/en/zarinshop" class="onePushed-button parsed" style=""> -->
           <h2 style="padding-right: 200px">Zarin Shop</h2>
           <p>Website - Mobile apps</p>
@@ -40,7 +40,7 @@
             </svg>
 
           </i>
-        </a>
+        </nuxt-link>
 
         <span class="onePushed-label">Latest Project</span>
       </div>

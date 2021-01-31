@@ -19,7 +19,8 @@
 					</li>
 					<li>
 						<h2>Telephone</h2>
-						<p class="font-fat">+7 995 596 84 25 — Tiet Zyong</p>
+						<p class="font-fat"><a href="tel:+79955968425">+7 995 596 84 25 — Tiet Zyong</a></p>
+						<p class="font-fat"> <a href="tel:+992918622774">+992 918 622 774 — Kamol Rakhimov</a></p>
 					</li>	
 					<li>
 						<h2>Instagram</h2>
