@@ -16,6 +16,7 @@
     "bootstrap-vue": "^2.15.0",
     "font-awesome": "^4.7.0",
     "nuxt": "^2.13.0",
+    "vue-scrollto": "^2.20.0",
     "vue-zoom-scroll": "^1.0.29"
   },
   "devDependencies": {

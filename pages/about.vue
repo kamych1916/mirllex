@@ -138,14 +138,16 @@
 	<div style="padding-left: 284.6px;">
 		<div class="img-area">
 			<div class="img loaded">
-				<img :src='"@/assets/medias/images/about-workplace.jpg"'>
+				<!-- about-workplace-2.jpg -->
+				<!-- <img :src='"@/assets/medias/images/about-workplace.jpg"'> -->
+				<img :src='"@/assets/medias/images/about-workplace-4.jpg"'>
 			</div>
 		</div>
 	</div>
 	
 		<div class="text-area">
-			<h2 class="fat">Mirllex is an independent <br>and a human scale studio.</h2>
-			<!-- <p class="font-fat">Morgane Urbain and Emmanuel Cruellas, <br>co-found Bonhomme in 2013 with the aim of producing <br>creative projects, accessible to all publics.<br><br>Rich in their experiences in the applied arts<br>and ready to wear, they quickly surround themselves<br>with passionate creative.</p> -->
+			<h2 class="fat">Mirllex is an independent <br> 	of young and ambitious professionals.</h2>
+			<p class="font-fat" style="color: black; font-weight: bold;"> <a class="link_founders" href="https://www.instagram.com/">Kamol Rakhimov</a> founde Mirllex in 2020 with the aim of <br>  creating creative projects accessible to everyone. <br> <br> Rich in scills in programming,  he quickly <br>surround themselves with passionate creativity <br> and people who realy works good.</p>
 		</div>
 	
 </section><section id="texts">
@@ -153,7 +155,7 @@
 		<div class="col-1-3 empty"></div>
 		<div class="col-2-3">
 			
-				<p class="font-fat">The studio offers a singular listening, a unique follow-up <br>and wise advice, thanks to a team of versatile talents, <br>constantly in technological and artistic watch.</p>
+				<p class="font-fat">Mirllex studio offers a singular listening, a unique<br> follow-up and  wise advice, thanks to a team of versatile <br>talents, constantly in technological and artistic watch.</p>
 			
 		</div>
 	</div>
@@ -239,5 +241,13 @@ export default {
 </script>
 
 <style>
-
+.link_founders{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+}
+.link_founders:hover{
+	color: black;
+	text-decoration: underline;
+}
 </style>

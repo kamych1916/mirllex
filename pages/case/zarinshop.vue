@@ -28,7 +28,7 @@
 			<h1 style="text-shadow: 1px 1px 6px black;">Zarin Shop</h1>
 			<p style="text-shadow: 1px 1px 8px black;" class="font-fat">Home Textile</p>
 		</div>
-		<div class="scroll-down-bar" id="scrollbar" >
+		<div class="scroll-down-bar" id="scrollbar" v-scroll-to="'#project-txt-intro'">
 			<div class="scroll-down">
 				<span >Scroll down</span>
 				<div class="arrow-bottom">
@@ -58,7 +58,7 @@
 	<ul>
 
 			<li class="img loaded">
-                <img :src='"@/assets/medias/images/zarinshopbanner.png"'>
+                <img :src='"@/assets/medias/images/zarinshopbanner-1.png"'>
 			</li>
 
 			<li class="grid grid-pad pad-top">
@@ -136,9 +136,6 @@
 						<p>Client</p>
 						AO Yun
 					</li>
-				
-
-				
 
 				
 					<li>
@@ -147,7 +144,6 @@
 					</li>
 				
 
-				
 					<li>
 						<p>Date</p>
 						November 2019
@@ -261,11 +257,11 @@
 </template>
 
 <script>
-import  ZoomScroll  from  "vue-zoom-scroll"
+// import  ZoomScroll  from  "vue-zoom-scroll"
 export default {
-    components: {
-        ZoomScroll
-    },
+    // components: {
+    //     ZoomScroll
+    // },
     data(){
         return{
             zoomScrollDetails: {},
@@ -273,16 +269,15 @@ export default {
     },
     mounted(){
         const ImgTag = document.getElementById('img_parallax');
-        const AwrrowTag = document.getElementById('scrollbar');
-        const Arrow_up = document.getElementById('arrow_up');
-        const Arrow_down = document.getElementById('arrow_down');
-        window.addEventListener("scroll", ()=>{
-            var scroll = document.documentElement.scrollTop;
-            ImgTag.style.transform = 'scale('+(100 + scroll/150)/100+')';
-            AwrrowTag.style.opacity = (100 - scroll/5)/100;
-            Arrow_up.style.transform = "rotate(" + ((100 - scroll/5)/2) + "deg)";
-            Arrow_down.style.transform = "rotate(-" + ((100 - scroll/5)/2) + "deg)";
-        })
+		const AwrrowTag = document.getElementById('scrollbar');
+		if(window.screen.width > 768){
+			window.addEventListener("scroll", ()=>{
+				var scroll = document.documentElement.scrollTop;
+				ImgTag.style.transform = 'scale('+(100 + scroll/150)/100+')';
+				AwrrowTag.style.opacity = (100 - scroll/5)/100;
+	
+			})
+		}
 
     },
     methods:{
