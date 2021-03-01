@@ -348,10 +348,14 @@ body.hide > section.page {
 .height-220 {
   height: 220px;
   position: relative; }
-
+.height-600 {
+  height: 600px;
+  position: relative; 
+}
 .height-720 {
   height: 720px;
-  position: relative; }
+  position: relative; 
+}
 
 .height-full {
   height: 100vh; }
@@ -521,7 +525,7 @@ li, p {
     height: 16px;
     margin-left: -8px;
     margin-top: -8px;
-    background-image: url('/assets/medias/images/spinner-grey.gif');
+    background-image: url('../medias/images/spinner-grey.gif');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     will-change: transform, opacity;

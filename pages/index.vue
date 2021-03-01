@@ -1,5 +1,6 @@
 <template>
   <section id="home" class="page">
+    
     <section id="about" class="height-full">
       <div class="col-1-2">
         <div class="vertical-align margin-50">
@@ -49,13 +50,13 @@
     <section id="projects">
       <div class="filters shown">
         <ul class="margin-50">
-          <li class="active">
+          <!-- <li class="active">
             ALL <span>3</span>
-          </li>
+          </li> -->
 
-          <li class="">
+          <!-- <li class="">
             Mobile Apps <span>1</span>
-          </li>
+          </li> -->
 
           <li>
             Web Systems <span>3</span>
@@ -75,7 +76,7 @@
       <ul class="items cat-selection shown" data-description="">
 
         <li class="col-1-3 cat-digital cat-selection cat-tous">
-          <a href="#" class="parsed">
+          <nuxt-link to="/case/aepgroup" class="parsed">
           <!-- <a href="/en/aep" class="parsed"> -->
 
             <div class="item-image">
@@ -94,7 +95,7 @@
               </i>
             </div>
 
-          </a>
+          </nuxt-link>
         </li>
 
         <li class="col-1-3 cat-content cat-selection cat-tous">
@@ -131,7 +132,7 @@
           discipline and communication skills<br />
           make young talents ready for global projects.
         </h2>
-        <a href="#" class="parsed">Discover studio</a>
+        <nuxt-link to="/about" class="parsed">Discover studio</nuxt-link>
         <!-- <a href="/en/about" class="parsed">Discover studio</a> -->
       </div>
     </section>

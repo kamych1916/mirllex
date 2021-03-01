@@ -150,7 +150,9 @@
 			<p class="font-fat" style="color: black; font-weight: bold;"> <a class="link_founders" href="https://www.instagram.com/">Kamol Rakhimov</a> founde Mirllex in 2020 with the aim of <br>  creating creative projects accessible to everyone. <br> <br> Rich in scills in programming,  he quickly <br>surround themselves with passionate creativity <br> and people who realy works good.</p>
 		</div>
 	
-</section><section id="texts">
+</section>
+
+<!-- <section id="texts">
 	<div class="grid grid-large">
 		<div class="col-1-3 empty"></div>
 		<div class="col-2-3">
@@ -159,27 +161,32 @@
 			
 		</div>
 	</div>
-</section><section id="team">
+</section> -->
+
+<!-- <section id="team">
 	<div class="grid grid-large">
 		<div class="col-1-3 empty"></div>
 		<ul class="col-2-3">
 			
 		</ul>
 	</div>
-</section><section id="image-1" class="image is-left">
+</section> -->
+
+<!-- <section id="image-1" class="image is-left">
 	<div style="padding-right: 184.6px;">
 		<div class="img-area">
 			<div class="img loaded">
-				<img :src='"@/assets/medias/images/about-workplace-2.jpg"'>
+				<img :src='"@/assets/medias/images/about-workplace.jpg"'>
 			</div>
 		</div>
 	</div>
-	
-</section><section id="subtitle">
+</section> -->
+
+<section id="subtitle">
 	<div class="grid grid-large">
 		<div class="col-1-3 empty"></div>
 		<div class="col-2-3">
-			<h2 class="fat">Mirllex is the strong partner of big companies and agencies <br>who believe in the power of systems and digital.</h2>
+			<h2 class="fat">Mirllex is the strong partner of big companies who believe in the power of systems and digital.</h2>
 		</div>
 	</div>
 </section>

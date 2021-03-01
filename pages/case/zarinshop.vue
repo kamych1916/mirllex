@@ -12,7 +12,7 @@
 			</div>
 		
 		<ul class="secondary-nav">
-			<li><nuxt-link to="/" class="parsed"><i class="prev"></i></nuxt-link></li>
+			<li><nuxt-link to="/case/aepgroup" class="parsed"><i class="prev"></i></nuxt-link></li>
 			<li><nuxt-link to="/" class="parsed"><i class="next"></i></nuxt-link></li>
 			<li><nuxt-link to="/" class="parsed"><i class="close"></i></nuxt-link></li>
 		</ul>
@@ -45,7 +45,7 @@
 		<div class="grid grid-pad pad-top">
 
 			<div>
-				<p class="font-fat">Zarin Shop produces high quality home textile products in Uzbekistan. Zarin Shop produces both household textiles and pajamas for adults and children. Delivery of goods is carried out throughout the republic.   </p>
+				<p class="font-fat">Zarin Shop produces high quality home textile products in Uzbekistan. Zarin Shop produces both household textiles and pajamas for adults and children. Delivery of goods is carried out throughout the republic. </p>
 			</div>
 
 		</div>
@@ -53,12 +53,12 @@
 	</div>
 
 </section>
-<section id="content">
+<section id="content" style="border-bottom: inherit">
 
 	<ul>
 
 			<li class="img loaded">
-                <img :src='"@/assets/medias/images/zarinshopbanner-1.png"'>
+                <img :src='"@/assets/medias/images/zarinshopbanner-3.png"'>
 			</li>
 
 			<li class="grid grid-pad pad-top">
@@ -68,56 +68,37 @@
 			
 			<li class="img loaded">
 
-				<img src="blob:https://bonhommeparis.com/3535cf9d-4716-451b-a660-78076705da1f" data-src-1024="https://bonhommeparis.com/api/content/uploads/2020/01/Ao-Yun-3-1024x1536.jpg" data-src-1280="https://bonhommeparis.com/api/content/uploads/2020/01/Ao-Yun-3-1280x1920.jpg" data-src-1930="https://bonhommeparis.com/api/content/uploads/2020/01/Ao-Yun-3.jpg" class="">
-
-			</li>
-
-			<li class="img loaded">
-
-				<img src="blob:https://bonhommeparis.com/45d05d0a-f468-4016-bf77-24eb99cc8c2d" data-src-1024="https://bonhommeparis.com/api/content/uploads/2020/01/Ao-Yun-4-1024x579.jpg" data-src-1280="https://bonhommeparis.com/api/content/uploads/2020/01/Ao-Yun-4-1280x723.jpg" data-src-1920="https://bonhommeparis.com/api/content/uploads/2020/01/Ao-Yun-4.jpg" class="">
-
-			</li>
-
-			<li class="img loaded">
-
-				<img src="blob:https://bonhommeparis.com/4fcd012c-4fb3-4511-9537-377ff05a61c2" data-src-1024="https://bonhommeparis.com/api/content/uploads/2020/01/Ao-Yun-5-1024x576.jpg" data-src-1280="https://bonhommeparis.com/api/content/uploads/2020/01/Ao-Yun-5-1280x720.jpg" data-src-1920="https://bonhommeparis.com/api/content/uploads/2020/01/Ao-Yun-5.jpg" class="">
+				<img :src='"@/assets/medias/images/zarinshopmockups.png"'>
 
 			</li>
 
 			<li class="grid grid-pad pad-top">
 				<h2>Video</h2>
-				<p class="font-fat">The decanting process playing a primordial role in the wine tasting, a video is produced showing the steps to follow.</p>
-			</li>
-			
-			<li class="img loaded">
-
-				<img src="blob:https://bonhommeparis.com/d32c52b8-957b-484b-9d8d-100730eb3381" data-src-1024="https://bonhommeparis.com/api/content/uploads/2020/01/Ao-Yun-6-1-1024x576.jpg" data-src-1280="https://bonhommeparis.com/api/content/uploads/2020/01/Ao-Yun-6-1-1280x720.jpg" data-src-1920="https://bonhommeparis.com/api/content/uploads/2020/01/Ao-Yun-6-1.jpg" class="">
-
+				<p class="font-fat">The process of jewelry sewing plays a primary role in the invention of top-end textile products, as well as in the process of literal development - the final project becomes reliable and perfect..</p>
 			</li>
             
-            <li class="img video" data-video-id="7">
-                
+            <li class="img video visible is-playing" style="background-color: inherit">
+				<!-- <img src="" alt=""> -->
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAFklEQVQoU2NkoBAwUqifYdQAhuEQBgANtgAKhIZC3wAAAABJRU5ErkJggg==">
-                <video src="https://bonhommeparis.com/api/content/uploads/2020/01/AO-Yun-Tryptique.mp4" preload="none" type="video/mp4" playsinline="" loop="" muted="" class="show"></video>
-            </li>
+                <video :src='"@/assets/medias/images/zarinshopvideo.mp4"' muted playsinline type='video/mp4;' autoplay="autoplay" class="show" loop></video>
+            </li> 
 
 	</ul>
 
-
-</section>
-
+</section>	
 
 
-<section id="quote" class="height-720">
+
+<section id="quote" class="height-600">
 	<div class="vertical-align">
 		<i>’’</i>
 		<h3>A real pleasure to work with a team so involved, reactive and passionate. The attention to detail and style!</h3>
-		
+		<a href="https://www.instagram.com/fara.mdm/" style="text-decoration: none">
 			<div class="author_image loaded">
-				<img src="blob:https://bonhommeparis.com/e93f5866-27f8-466d-8486-0704207974ba" data-src-130="https://bonhommeparis.com/api/content/uploads/2020/01/Audrey.jpg" class="desc">
+				<img :src='"@/assets/medias/images/ZarinshopClient.jpg"' class="desc">
 			</div>
-		
-		<p><i>Audrey Onolfo</i><br> Brand Manager - Ao Yun</p>
+			<p><i>Farruh Madaminov </i><br>Brand Manager - Zarin Shop</p>
+		</a>
 	</div>
 </section>
 
@@ -127,32 +108,25 @@
 	<div class="grid">
 
 		<div class="list col-1-2">
-
 			<h2>Informations</h2>
-
 			<ul>
-				
-					<li>
-						<p>Client</p>
-						AO Yun
-					</li>
+				<li>
+					<p>Client</p>
+					Zarin Shop
+				</li>
 
-				
-					<li>
-						<p>Partner</p>
-						Marie Liszkai / Photographie
-					</li>
-				
+			
+				<li>
+					<p>Partner</p>
+					Farruh Madaminov / Brand Manager
+				</li>
+			
 
-					<li>
-						<p>Date</p>
-						November 2019
-					</li>
-				
-
-				
+				<li>
+					<p>Date</p>
+					January 2021
+				</li>
 			</ul>
-
 		</div>
 
 		
@@ -161,29 +135,25 @@
 			<h2>Skills</h2>
 			<ul class="chips">
 				
-				<li>Design</li>
+				<li>Web and mobile design</li>
 				
-				<li>Creative Direction</li>
+				<li>Web-system</li>
 				
-				<li>Art Direction</li>
+				<li>Mobile-apps</li>
 				
-				<li>Set Design</li>
+				<li>SEO</li>
 				
-				<li>Photography</li>
-				
-				<li>Project Managment</li>
+				<li>Online shop</li>
 				
 			</ul>
 		</div>
 
-		
 
 	</div>
 
-
 </section>
 
-<section id="projects">
+<!-- <section id="projects">
 
 	
 
@@ -250,7 +220,7 @@
 		</ul>
 	
 
-</section>
+</section> -->
 
 
 </section>
@@ -264,7 +234,7 @@ export default {
     // },
     data(){
         return{
-            zoomScrollDetails: {},
+            // zoomScrollDetails: {},
         }
     },
     mounted(){
@@ -277,13 +247,13 @@ export default {
 				AwrrowTag.style.opacity = (100 - scroll/5)/100;
 	
 			})
-		}
+		};
 
     },
     methods:{
-            yourFunction(data) {
-                this.zoomScrollDetails = data;
-            }
+            // yourFunction(data) {
+            //     this.zoomScrollDetails = data;
+            // }
     }
 }
 </script>
@@ -291,5 +261,9 @@ export default {
 <style>
 .zoom-scroll__content{
     background-image: none !important;
+}
+.technologies p{
+	color: #000;
+    line-height: 140%;
 }
 </style>
