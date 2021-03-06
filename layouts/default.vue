@@ -2,7 +2,7 @@
   <div id="common">
     <header id="header" class="shown show sticky">
       <div class="outer-container">
-        <nuxt-link to="/" class="parsed">M<i>.</i></nuxt-link>
+        <nuxt-link to="/" class="logo-link"> <span class='logo'>M</span><i>.</i></nuxt-link>
         <ul class="primary-nav">
               
             <li :class="$nuxt.$route.name === 'index' ? 'active' : ''">
@@ -35,17 +35,9 @@
 
 export default {
   data() {
-    return {
-    //   is_active_main: false,
-    //   is_active_about: false,
-    //   is_active_contact: false,
-    };
+    return {};
   },
   mounted(){
-    // this.$nuxt.$route.name == 'contact' ? this.is_active_contact = true : ''
-    // console.log(this.is_active_contact)
-    // this.$nuxt.$route.name == 'about' ? this.is_active_about = true : ''
-    // this.$nuxt.$route.name == 'main' ? this.is_active_main = true : ''
     const HeaderTag = document.getElementById('header');
     HeaderTag.style.borderBottom = "none";
     HeaderTag.style.backgroundColor = "transparent";
@@ -55,16 +47,20 @@ export default {
         HeaderTag.style.backgroundColor = "#fff"
       }else{
         HeaderTag.style.borderBottom = "none"
-        HeaderTag.style.backgroundColor = "transparent"
+        Head1erTag.style.backgroundColor = "transparent"
       }
     });
-    // alert(this.$nuxt.$route.name)
-
   },
 };
 </script>  
 <style>
 
+.logo-link{
+  text-decoration: none !important;
+}
 
+.logo-link:hover .logo{
+  text-decoration: underline;
+}
 
 </style>

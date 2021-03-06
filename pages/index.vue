@@ -99,7 +99,7 @@
         </li>
 
         <li class="col-1-3 cat-content cat-selection cat-tous">
-          <a href="#" class="parsed">
+          <nuxt-link to="/case/dmsportal" class="parsed">
           <!-- <a href="/en/dormostservice" class="parsed"> -->
             <div class="item-image">
               <div class="img cat-selection cat-identite cat-digital cat-interieur cat-tous">
@@ -115,7 +115,7 @@
                 </svg>
               </i>
             </div>
-          </a>
+          </nuxt-link>
         </li>
 
       </ul>
@@ -139,19 +139,6 @@
 
   </section>
 </template>
-
-<script>
-import axios from "axios";
-
-export default {
-  data() {
-    return {};
-  },
-  created() {},
-  mounted() {},
-  methods: {},
-};
-</script>
 
 <style scoped>
 html,

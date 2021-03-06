@@ -12,8 +12,8 @@
 			</div>
 		
 		<ul class="secondary-nav">
-			<li><nuxt-link to="/case/aepgroup" class="parsed"><i class="prev"></i></nuxt-link></li>
-			<li><nuxt-link to="/" class="parsed"><i class="next"></i></nuxt-link></li>
+			<li><nuxt-link to="/case/dmsportal" class="parsed"><i class="prev"></i></nuxt-link></li>
+			<li><nuxt-link to="/case/aepgroup" class="parsed"><i class="next"></i></nuxt-link></li>
 			<li><nuxt-link to="/" class="parsed"><i class="close"></i></nuxt-link></li>
 		</ul>
 	</div>
@@ -73,7 +73,7 @@
 			</li>
 
 			<li class="grid grid-pad pad-top">
-				<h2>Video</h2>
+				<h2>Some info</h2>
 				<p class="font-fat">The process of jewelry sewing plays a primary role in the invention of top-end textile products, as well as in the process of literal development - the final project becomes reliable and perfect..</p>
 			</li>
             
@@ -227,20 +227,11 @@
 </template>
 
 <script>
-// import  ZoomScroll  from  "vue-zoom-scroll"
 export default {
-    // components: {
-    //     ZoomScroll
-    // },
-    data(){
-        return{
-            // zoomScrollDetails: {},
-        }
-    },
     mounted(){
         const ImgTag = document.getElementById('img_parallax');
 		const AwrrowTag = document.getElementById('scrollbar');
-		if(window.screen.width > 768){
+		if(window.screen.width > 500){
 			window.addEventListener("scroll", ()=>{
 				var scroll = document.documentElement.scrollTop;
 				ImgTag.style.transform = 'scale('+(100 + scroll/150)/100+')';
@@ -250,11 +241,6 @@ export default {
 		};
 
     },
-    methods:{
-            // yourFunction(data) {
-            //     this.zoomScrollDetails = data;
-            // }
-    }
 }
 </script>
 
@@ -265,5 +251,11 @@ export default {
 .technologies p{
 	color: #000;
     line-height: 140%;
+}
+
+@media screen and (max-width: 703px){
+	.height-600{
+		height: auto !important;
+	}
 }
 </style>

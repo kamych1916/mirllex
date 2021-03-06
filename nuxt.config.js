@@ -17,6 +17,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'},
       
       { name: "robots", content: "index, follow"},
+      { name: "theme-color", content: "#fff"},
       { name: "description", content: 'Мы — digital студия, которая помогает бизнесу выделяться. Разрабатываем качественный продукт — Брендинг & Маркетинг & Веб-сайты' },
       { name: "keywords", content: 'mirllex digital studio, digital студия, диджитал студия, digital studio, digital marketing, digital маркетинг, диджитал маркетинг, digital agency, digital агенство, диджитал агенство, разработка вебсайта, лендинг' },
       

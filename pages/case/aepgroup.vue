@@ -13,7 +13,7 @@
 		
 		<ul class="secondary-nav">
 			<li><nuxt-link to="/case/zarinshop" class="parsed"><i class="prev"></i></nuxt-link></li>
-			<li><nuxt-link to="/" class="parsed"><i class="next"></i></nuxt-link></li>
+			<li><nuxt-link to="/case/dmsportal" class="parsed"><i class="next"></i></nuxt-link></li>
 			<li><nuxt-link to="/" class="parsed"><i class="close"></i></nuxt-link></li>
 		</ul>
 	</div>
@@ -58,7 +58,7 @@
 	<ul>
 
 			<li class="img loaded">
-                <img :src='"@/assets/medias/images/aep-1.png"'>
+                <img :src='"@/assets/medias/images/aep-2.png"'>
 			</li>
 
 			<li class="grid grid-pad pad-top">
@@ -73,7 +73,7 @@
 			</li>
 
 			<li class="grid grid-pad pad-top">
-				<h2>Video</h2>
+				<h2>Some info</h2>
 				<p class="font-fat">The Agency "United Contractor" brought together a number of specialists and specialized organizations in the field of general construction, construction and repair and construction works of the operation of buildings and structures in residential and non-residential premises, as well as cleaning, transport services, etc.</p>
 			</li>
             
@@ -149,94 +149,15 @@
 
 </section>
 
-<!-- <section id="projects">
-
-	
-
-	
-		<ul class="items">
-			
-				<li class="col-1-3">
-					<a href="/en/baudin" data-track-interaction="click" data-track-context="project-previews" data-track-action="go-baudin" class="parsed">
-						
-							<div class="img loaded">
-								<img src="blob:https://bonhommeparis.com/46632b42-02e8-4e28-b96d-86a6bdcc79d6" data-src-1024="https://bonhommeparis.com/api/content/uploads/2020/12/Baudin-1-1024x576.jpg" class="">
-							</div>
-						
-						<div>
-							<h2>Baudin</h2>
-							<p>Interior</p>
-							<i class="ico-arrow">
-								<svg width="8px" height="8px">
-									<use xlink:href="#ico-arrow"></use>
-								</svg>
-							</i>
-						</div>
-					</a>
-				</li>
-			
-				<li class="col-1-3">
-					<a href="/en/tag-heuer-cw2020" data-track-interaction="click" data-track-context="project-previews" data-track-action="go-tag-heuer-cw2020" class="parsed">
-						
-							<div class="img loaded">
-								<img src="blob:https://bonhommeparis.com/0ec9e939-1ced-4cc2-a8e2-8b445ece212d" data-src-1024="https://bonhommeparis.com/api/content/uploads/2022/04/TAG-Heuer_CW2020-1024x576.jpg" class="">
-							</div>
-						
-						<div>
-							<h2>TAG HEUER CW</h2>
-							<p>Content - Digital</p>
-							<i class="ico-arrow">
-								<svg width="8px" height="8px">
-									<use xlink:href="#ico-arrow"></use>
-								</svg>
-							</i>
-						</div>
-					</a>
-				</li>
-			
-				<li class="col-1-3">
-					<a href="/en/tag-heuer-rs" data-track-interaction="click" data-track-context="project-previews" data-track-action="go-tag-heuer-rs" class="parsed">
-						
-							<div class="img loaded">
-								<img src="blob:https://bonhommeparis.com/ddf153bc-0ee3-47bc-9a58-7aab3edbee72" data-src-1024="https://bonhommeparis.com/api/content/uploads/2019/11/Bonhomme-Tag-Heuer-1024x576.jpg" class="">
-							</div>
-						
-						<div>
-							<h2>TAG Heuer RS</h2>
-							<p>Branding - Content</p>
-							<i class="ico-arrow">
-								<svg width="8px" height="8px">
-									<use xlink:href="#ico-arrow"></use>
-								</svg>
-							</i>
-						</div>
-					</a>
-				</li>
-			
-		</ul>
-	
-
-</section> -->
-
-
 </section>
 </template>
 
 <script>
-// import  ZoomScroll  from  "vue-zoom-scroll"
 export default {
-    // components: {
-    //     ZoomScroll
-    // },
-    data(){
-        return{
-            // zoomScrollDetails: {},
-        }
-    },
     mounted(){
         const ImgTag = document.getElementById('img_parallax');
 		const AwrrowTag = document.getElementById('scrollbar');
-		if(window.screen.width > 768){
+		if(window.screen.width > 500){
 			window.addEventListener("scroll", ()=>{
 				var scroll = document.documentElement.scrollTop;
 				ImgTag.style.transform = 'scale('+(100 + scroll/150)/100+')';
@@ -245,11 +166,6 @@ export default {
 			})
 		};
 
-    },
-    methods:{
-            // yourFunction(data) {
-            //     this.zoomScrollDetails = data;
-            // }
     }
 }
 </script>
@@ -261,5 +177,10 @@ export default {
 .technologies p{
 	color: #000;
     line-height: 140%;
+}
+@media screen and (max-width: 703px){
+	.height-600{
+		height: auto !important;
+	}
 }
 </style>
