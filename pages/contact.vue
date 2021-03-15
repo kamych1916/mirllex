@@ -24,7 +24,7 @@
 					</li>	
 					<li>
 						<h2>Instagram</h2>
-						<p class="font-fat"><a class="mailto" href="#">instagram/mirllex</a></p>
+						<p class="font-fat"><a class="https://www.instagram.com/mirllex.space/" href="#">instagram/mirllex.space</a></p>
 					</li>
 					<li>
 						<h2>Adress</h2>
